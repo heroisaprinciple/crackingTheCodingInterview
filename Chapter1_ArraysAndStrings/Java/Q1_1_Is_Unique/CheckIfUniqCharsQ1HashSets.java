@@ -1,7 +1,7 @@
 // HashsSets are like HashMaps, but store uniq data
 // Time Complexity: O(n); Space: O(n) as the new data struct was introduced
 
-package Chapter1_ArraysAndStrings.Java;
+package Chapter1_ArraysAndStrings.Java.Q1_1_Is_Unique;
 
 import java.util.*;
 

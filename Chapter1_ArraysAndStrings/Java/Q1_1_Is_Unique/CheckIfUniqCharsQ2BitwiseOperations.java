@@ -1,7 +1,7 @@
 // Bitwise operations using ascii conversion
 // Time complexity: O(n); Space complexity: O(1)
 
-package Chapter1_ArraysAndStrings.Java;
+package Chapter1_ArraysAndStrings.Java.Q1_1_Is_Unique;
 
 public class CheckIfUniqCharsQ2BitwiseOperations {
   public static void main(String[] args) {

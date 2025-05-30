@@ -2,7 +2,7 @@
 // As this chapter introduces ArrayLists, I decided to use them.
 // Time: O(n^2); Space: O(n) -> as a new data struct was introduced
 
-package Chapter1_ArraysAndStrings.Java;
+package Chapter1_ArraysAndStrings.Java.Q1_1_Is_Unique;
 
 import java.util.*;
 

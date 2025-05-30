@@ -1,13 +1,13 @@
 // Brute-Force Solution
 // Time: O(n^2); Space: O(1)
 
-package Chapter1_ArraysAndStrings.Java;
+package Chapter1_ArraysAndStrings.Java.Q1_1_Is_Unique;
 
 public class CheckIfUniqCharsQ2 {
-  public static void main(String[] args) {
+    public static void main(String[] args) {
         System.out.println("Brute Force Approach. \n");
 
-        String[] words = {"hello", "cat", "apple", "giraffe", "human"};
+        String[] words = { "hello", "cat", "apple", "giraffe", "human" };
         for (String word : words) {
             System.out.println(word + ": " + hasUniqChars(word));
 
