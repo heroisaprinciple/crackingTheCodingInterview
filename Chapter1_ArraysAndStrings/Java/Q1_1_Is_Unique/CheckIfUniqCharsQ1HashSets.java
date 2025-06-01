@@ -1,5 +1,6 @@
 // HashsSets are like HashMaps, but store uniq data
-// Time Complexity: O(n); Space: O(n) as the new data struct was introduced
+// Time Complexity: O(n);
+// Space Comlexity: O(n) as the new data struct was introduced
 
 package Chapter1_ArraysAndStrings.Java.Q1_1_Is_Unique;
 
@@ -9,9 +10,9 @@ public class CheckIfUniqCharsQ1HashSets {
   public static void main(String[] args) {
     System.out.println("HashSets introduction. \n");
 
-    String[] words = {"hello", "cat", "apple", "giraffe", "human", "dinosaur", "hashset"};
+    String[] words = { "hello", "cat", "apple", "giraffe", "human", "dinosaur", "hashset" };
     for (String word : words) {
-        System.out.println(word + ": " + hasUniqChars(word));
+      System.out.println(word + ": " + hasUniqChars(word));
     }
   }
 

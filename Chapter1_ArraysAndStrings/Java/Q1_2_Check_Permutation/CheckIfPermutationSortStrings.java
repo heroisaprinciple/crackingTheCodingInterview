@@ -1,3 +1,7 @@
+// Time complexity: O(n log n) because of the adanced sorting algorithm:
+// O(n) work per level * log n levels = O(n log n)
+// Space complexity: O(n) because of the recursive tree call stack
+
 package Chapter1_ArraysAndStrings.Java.Q1_2_Check_Permutation;
 
 import java.util.Arrays;
@@ -15,7 +19,7 @@ public class CheckIfPermutationSortStrings {
 
   public static String sort(String word) {
     char[] chars = word.toCharArray();
-    Arrays.sort(chars);
+    Arrays.sort(chars); // advanced sort algo: O(n log n)
     return new String(chars);
   }
 

@@ -1,5 +1,6 @@
 // Brute-Force Solution
-// Time: O(n^2); Space: O(1)
+// Time complexity: O(n^2);
+// Space complexity: O(1)
 
 package Chapter1_ArraysAndStrings.Java.Q1_1_Is_Unique;
 

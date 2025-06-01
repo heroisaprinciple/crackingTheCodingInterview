@@ -1,14 +1,14 @@
-/*  Time is O(n) here
-Space is quite compicated:
+/*
+Time complexity: O(n)
+Space complexity: O(n) -> O(n) + O(n)
 
-It is either O(1) if a fixed-size alphabet of 26 chars is assumed,
-because the HashMap will never hold more than a constant n of els
+Space is O(n) because each HashMap can grow to store up to n unique characters,
+in the worst case where all characters are distinct.
 
-Or O(n) in the worst case if implementation consists of unicode, ASCII, emojis, etc;
-because the number of distinct characters in Hashmap can grow linearly with input size
+If the character set is fixed (e.g., ASCII or a–z), then space is O(1),
+because the number of entries is bounded by a constant.
 */
 
-// TODO: do with 1 hashmap and buils tests
 package Chapter1_ArraysAndStrings.Java.Q1_2_Check_Permutation;
 
 import java.util.HashMap;
