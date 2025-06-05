@@ -7,7 +7,7 @@ package Chapter1_ArraysAndStrings.Java.Q1_1_Is_Unique;
 
 import java.util.*;
 
-public class CheckIfUniqCharsQ1ArrayLists {
+public class UniqCharsQ1ArrayLists {
   public static boolean hasUniqChars(String word) {
     ArrayList<Character> chars = new ArrayList<Character>();
     for (char el : word.toCharArray()) { // O(n)

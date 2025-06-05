@@ -6,7 +6,7 @@ package Chapter1_ArraysAndStrings.Java.Q1_2_Check_Permutation;
 
 import java.util.Arrays;
 
-public class CheckIfPermutationSortStrings {
+public class PermutationSortStrings {
   public static String sort(String word) {
     char[] chars = word.toCharArray();
     Arrays.sort(chars); // advanced sort algo: O(n log n)

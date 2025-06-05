@@ -13,7 +13,7 @@ package Chapter1_ArraysAndStrings.Java.Q1_2_Check_Permutation;
 
 import java.util.HashMap;
 
-public class CheckIfPermutationCharFrequencyCountOneHashmap {
+public class PermutationCharFrequencyCountOneHashmap {
   public static boolean checkIfPermOfStr(String word1, String word2) {
     if (word1 == null || word2 == null)
       return false;

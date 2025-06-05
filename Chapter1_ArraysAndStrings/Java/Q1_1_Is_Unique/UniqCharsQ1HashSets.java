@@ -6,7 +6,7 @@ package Chapter1_ArraysAndStrings.Java.Q1_1_Is_Unique;
 
 import java.util.*;
 
-public class CheckIfUniqCharsQ1HashSets {
+public class UniqCharsQ1HashSets {
   public static boolean hasUniqChars(String str) {
     HashSet<Character> charSet = new HashSet<Character>();
     for (char el : str.toCharArray()) { // O(n)

@@ -4,7 +4,7 @@
 
 package Chapter1_ArraysAndStrings.Java.Q1_1_Is_Unique;
 
-public class CheckIfUniqCharsQ2 {
+public class UniqCharsQ2 {
     public static boolean hasUniqChars(String word) {
         for (int i = 0; i < word.length(); i++) {
             for (int j = i + 1; j < word.length(); j++) {

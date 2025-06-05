@@ -4,7 +4,7 @@
 
 package Chapter1_ArraysAndStrings.Java.Q1_2_Check_Permutation;
 
-public class CheckIfPermutationCharFrequencyCountSizeConstant {
+public class PermutationCharFrequencyCountSizeConstant {
   public static boolean checkIfPermOfStr(String word1, String word2) {
     if (!isValidInput(word1, word2))
       return false;

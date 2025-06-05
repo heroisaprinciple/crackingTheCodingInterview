@@ -7,10 +7,10 @@
 <p>Unique: Implement an algorithm to determine if a string has all unique characters. What if you
 cannot use additional data structures? </p>
 
-- [Q1: Using ArrayLists -> Time: O(n^2); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_1_Is_Unique/CheckIfUniqCharsQ1ArrayLists.java)
-- [Q1: Using HashSets -> Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_1_Is_Unique/CheckIfUniqCharsQ1HashSets.java)
-- [Q2: Brute Force Compare -> Time: O(n^2); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_1_Is_Unique/CheckIfUniqCharsQ2.java)
-- [Q2: Bitwise Operations -> Time: O(n); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_1_Is_Unique/CheckIfUniqCharsQ2BitwiseOperations.java)
+- [Q1: Using ArrayLists -> Time: O(n^2); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_1_Is_Unique/UniqCharsQ1ArrayLists.java)
+- [Q1: Using HashSets -> Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_1_Is_Unique/UniqCharsQ1HashSets.java)
+- [Q2: Brute Force Compare -> Time: O(n^2); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_1_Is_Unique/UniqCharsQ2.java)
+- [Q2: Bitwise Operations -> Time: O(n); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_1_Is_Unique/UniqCharsQ2BitwiseOperations.java)
 
 <hr>
 
@@ -18,10 +18,10 @@ cannot use additional data structures? </p>
 <p> Check Permutation: Given two strings, write a method to decide if one is a permutation of the
 other. </p>
 
-- [Option 1: Sort Strings -> Time: O(n log n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/CheckIfPermutationSortStrings.java)
-- [Option 2: Count Char Frequency with 2 Hashmaps -> Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/CheckIfPermutationCharFrequencyCount.java)
-- [Option 3: Count Char Frequency with 1 Hashmap -> Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/CheckIfPermutationCharFrequencyCountOneHashmap.java)
-- [Option 4: Count Char Frequency with 1 Array -> Time: O(n); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/CheckIfPermutationCharFrequencyCountSizeConstant.java)
+- [Option 1: Sort Strings -> Time: O(n log n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/PermutationSortStrings.java)
+- [Option 2: Count Char Frequency with 2 Hashmaps -> Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/PermutationCharFrequencyCount.java)
+- [Option 3: Count Charncy with 1 Hashmap -> Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/PermutationCharFrequencyCountOneHashmap.java)
+- [Option 4: Count Char Frequency with 1 Array -> Time: O(n); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/PermutationCharFrequencyCountSizeConstant.java)
 
 
 <b>Key takeaway: <i>"In your interview, you should always check with your interviewer about the

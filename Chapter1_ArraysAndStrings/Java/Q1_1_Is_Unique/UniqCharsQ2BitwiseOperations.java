@@ -4,7 +4,7 @@
 
 package Chapter1_ArraysAndStrings.Java.Q1_1_Is_Unique;
 
-public class CheckIfUniqCharsQ2BitwiseOperations {
+public class UniqCharsQ2BitwiseOperations {
   public static boolean hasUniqChars(String word) {
     if (word.length() > 26) { // O(1) as Java String class stores the length as a separate
                               // int field in memory; Would we O(n) in C by C's design
