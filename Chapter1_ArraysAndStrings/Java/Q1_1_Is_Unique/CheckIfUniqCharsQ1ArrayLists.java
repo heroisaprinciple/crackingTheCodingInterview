@@ -8,16 +8,6 @@ package Chapter1_ArraysAndStrings.Java.Q1_1_Is_Unique;
 import java.util.*;
 
 public class CheckIfUniqCharsQ1ArrayLists {
-  public static void main(String[] args) {
-    System.out.println("ArrayLists introduction. \n");
-
-    String[] words = { "hello", "cat", "apple", "giraffe", "human", "dinosaur" };
-    for (String word : words) {
-      System.out.println(word + ": " + hasUniqChars(word));
-
-    }
-  }
-
   public static boolean hasUniqChars(String word) {
     ArrayList<Character> chars = new ArrayList<Character>();
     for (char el : word.toCharArray()) { // O(n)
@@ -28,5 +18,14 @@ public class CheckIfUniqCharsQ1ArrayLists {
       chars.add(el); // O(1)
     }
     return true;
+  }
+
+  public static void main(String[] args) {
+    System.out.println("ArrayLists introduction. \n");
+
+    String[] words = { "hello", "cat", "apple", "giraffe", "human", "dinosaur" };
+    for (String word : words) {
+      System.out.println(word + ": " + hasUniqChars(word));
+    }
   }
 }

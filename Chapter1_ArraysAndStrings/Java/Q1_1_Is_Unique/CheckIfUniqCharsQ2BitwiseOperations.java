@@ -5,13 +5,6 @@
 package Chapter1_ArraysAndStrings.Java.Q1_1_Is_Unique;
 
 public class CheckIfUniqCharsQ2BitwiseOperations {
-  public static void main(String[] args) {
-    String[] words = { "hello", "cat", "apple", "giraffe", "human", "dinosaur", "essay" };
-    for (String word : words) {
-      System.out.println(word + ": " + hasUniqChars(word));
-    }
-  }
-
   public static boolean hasUniqChars(String word) {
     if (word.length() > 26) { // O(1) as Java String class stores the length as a separate
                               // int field in memory; Would we O(n) in C by C's design
@@ -26,5 +19,12 @@ public class CheckIfUniqCharsQ2BitwiseOperations {
       checker |= (1 << ascii); // O(1)
     }
     return true;
+  }
+
+  public static void main(String[] args) {
+    String[] words = { "hello", "cat", "apple", "giraffe", "human", "dinosaur", "essay" };
+    for (String word : words) {
+      System.out.println(word + ": " + hasUniqChars(word));
+    }
   }
 }
