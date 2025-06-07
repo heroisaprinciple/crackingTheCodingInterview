@@ -76,6 +76,45 @@ That's not always the case, and this problem is a simple demonstration of it You
 permutations in order to check if one is a palindrome." </i>
 </b>
 
+<hr>
+
+### Q1.5. One Edit Away
+<p><i>Two pointers problem</i></p>
+<p>One Away: There are three types of edits that can be performed on strings: insert a character,
+remove a character, or replace a character. Given two strings, write a function to check if they are
+one edit (or zero edits) away.
+</p>
+
+````
+pale, pie -> true
+pales, pale -> true
+pale, bale -> true
+pale, bae -> false
+````
+
+- [Option 1: Separate Replace and Insert Operations → Time: O(n); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_5_One_Away/OneAwaySeparateOperations.java)
+- [Option 2: United Replace and Insert Operations → Time: O(n); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_5_One_Away/OneAwayOneOperation.java)
+
+<b> Key takeaway: <i>
+"Why is the runtime dictated by the shorter string instead of the longer string? If the strings are
+the same length (plus or minus one character), then it doesn't matter whether we use the longer
+string or the shorter string to define the runtime. If the strings are very different lengths, then the
+algorithm will terminate in 0(1) time. One really, really long string therefore won't significantly
+extend the runtime. It increases the runtime only if both strings are long." </i>
+
+Normally, when comparing two arbitrary strings of lengths n and m, the time complexity would be: </b>
+
+````
+O(min(n, m)) if stop early
+O(n + m) if traverse both completely
+````
+
+<b>But in this specific problem, the lengths are either the same, or off by exactly 1.</b>
+
+<i> "Some people might argue the first approach is better, as it is clearer and easier to follow. Others, however,
+will argue that the second approach is better, since it's more compact and doesn't duplicate code (which
+can facilitate maintainability).
+You don't necessarily need to "pick a side."You can discuss the tradeoffs with your interviewer."</i>
 
 -----------
 
