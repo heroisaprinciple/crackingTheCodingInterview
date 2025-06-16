@@ -116,6 +116,26 @@ will argue that the second approach is better, since it's more compact and doesn
 can facilitate maintainability).
 You don't necessarily need to "pick a side."You can discuss the tradeoffs with your interviewer."</i>
 
+<hr>
+
+### Q1.6 String Compression
+<p>String Compression: Implement a method to perform basic string compression using the counts
+of repeated characters. If the "compressed" string would not become smaller than theoriginal string, your method should return the original string.
+You can assume the string has only uppercase and lowercase letters (a - z).</p>
+
+````
+Input: aabcccccaaa
+Output: a2blc5a3
+````
+
+
+- [Option 1: Basic Compression with Post-check → Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_6_String_Compression/StringCompression.java)
+- [Option 2: Compression with Explicit Bound Checks → Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_6_String_Compression/StringCompressionCheckBounds.java)
+- [Option 3: Precompute Compressed Length Before Building → Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_6_String_Compression/StringCompressionLengthLookahead.java)
+
+**Key takeaway: _Only build a compressed string if it saves space. Use a lookahead to compute final length, and avoid using HashMaps since they lose grouping (e.g., `"aabaaa"` becomes `"a5"` instead of `"a2b1a3"`)._**
+
+
 -----------
 
 
