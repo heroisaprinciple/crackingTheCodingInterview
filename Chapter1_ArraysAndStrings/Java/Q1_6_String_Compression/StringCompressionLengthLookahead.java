@@ -52,7 +52,7 @@ public class StringCompressionLengthLookahead {
     return sb.toString();
   }
 
-  // check ahead if we need to iterate over str
+  // check compressed length
   private static int checkCompressedLength(String str) {
     int occurrenceCount = 0;
     int compressedLength = 0;

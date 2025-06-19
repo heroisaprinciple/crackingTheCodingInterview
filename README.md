@@ -135,7 +135,36 @@ Output: a2blc5a3
 
 **Key takeaway: _Only build a compressed string if it saves space. Use a lookahead to compute final length, and avoid using HashMaps since they lose grouping (e.g., `"aabaaa"` becomes `"a5"` instead of `"a2b1a3"`)._**
 
+<hr>
 
+### Q1.7 Matrix Rotation
+<p>Rotate Matrix: Given an image represented by an nxn matrix, where each pixel in the image is 4
+bytes, write a method to rotate the image by 90 degrees. Can you do this in place?</p>
+
+````
+Input:
+[
+ [200, 113, 211, 151],
+ [156,  45, 214, 200],
+ [173, 210, 211, 251],
+ [ 94, 100, 117, 125]
+]
+
+Output after 90° clockwise rotation:
+[
+ [ 94, 173, 156, 200],
+ [100, 210,  45, 113],
+ [117, 211, 214, 211],
+ [125, 251, 200, 151]
+]
+````
+
+- [Option 1: Brute-force using new matrix -> Time: O(n^2); Space: O(n^2)](Chapter1_ArraysAndStrings/Java/Q1_7_Matrix_Rotation/MatrixRotationBy90Degrees.java)
+- [Option 2: In-place using Transpose + Reverse -> Time: O(n^2); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_7_Matrix_Rotation/MatrixRotationBy90DegreesOptimalSpace.java)
+
+
+Disclaimer: the author's [solution](https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2001.%20Arrays%20and%20Strings/Q1_07_Rotate_Matrix/Question.java) to the in-place option was not implemented here as rotation in layers seemed
+very difficult for me. Instead, I did a matrix transpose and reverse, inspired by this [video](https://www.youtube.com/watch?v=Z0R2u6gd3GU).
 -----------
 
 
