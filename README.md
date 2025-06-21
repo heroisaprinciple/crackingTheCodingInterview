@@ -165,6 +165,40 @@ Output after 90° clockwise rotation:
 
 Disclaimer: the author's [solution](https://github.com/careercup/CtCI-6th-Edition/blob/master/Java/Ch%2001.%20Arrays%20and%20Strings/Q1_07_Rotate_Matrix/Question.java) to the in-place option was not implemented here as rotation in layers seemed
 very difficult for me. Instead, I did a matrix transpose and reverse, inspired by this [video](https://www.youtube.com/watch?v=Z0R2u6gd3GU).
+
+<hr>
+
+### Q1.8 Zero Matrix
+<p>Zero Matrix: Write an algorithm such that if an element in an m x n matrix is 0, its entire row and
+column are set to 0.
+</p>
+
+````
+Input:
+24   0  50  250
+0   27  143 247
+163 143 214 152
+48  207 146  28
+121 172  83 214
+
+Output:
+0   0   0   0
+0   0   0   0
+0   0 214 152
+0   0 146  28
+0   0  83 214
+````
+
+- [Option 1: Brute-force approach → Time: O((n x m) x (n + m)) + O(n x m); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_8_Zero_Matrix/RowAndColNullification.java)
+- [Option 2: More optimized in time → Time: O(n × m); Space: O(n + m)](Chapter1_ArraysAndStrings/Java/Q1_8_Zero_Matrix/RowAndColNullificationOptimized.java)
+- [Option 3: Space optimal using first row/col as markers → Time: O(n × m); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_8_Zero_Matrix/RowAndColNullificationSpaceOptimal.java)
+
+<b>Key takeaway:</b>
+<i>For optimal space, [reuse the matrix itself to track zero positions](https://takeuforward.org/data-structure/set-matrix-zero/). Just preserve the initial state of row 0 and col 0 with booleans, then modify in-place in a final sweep.</i>
+
+
+
+
 -----------
 
 
