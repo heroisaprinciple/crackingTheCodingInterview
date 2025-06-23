@@ -62,9 +62,9 @@ Input: "Tact Coa"
 Output: true // Permutations: "taco cat", "atco cta", etc.
 ````
 
-- [Option 1: Using HashMap → Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_4_Palindrome_Permuatation/PalindromePermutationChecker.java)
-- [Option 2: Using Fixed Array (Optimized) → Time: O(n); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_4_Palindrome_Permuatation/PalindromePermutationCheckerOptimized.java)
-- [Option 3: Bit Vector Approach → Time: O(n); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_4_Palindrome_Permuatation/PalindromePermutationCheckerBitVector.java)
+- [Option 1: Using HashMap → Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_4_Palindrome_Permutation/PalindromePermutationChecker.java)
+- [Option 2: Using Fixed Array (Optimized) → Time: O(n); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_4_Palindrome_Permutation/PalindromePermutationCheckerOptimized.java)
+- [Option 3: Bit Vector Approach → Time: O(n); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_4_Palindrome_Permutation/PalindromePermutationCheckerBitVector.java)
 
 <b>Key takeaway: <i> "It's interesting to note a solution that we did not explore. We avoided solutions along the lines of "create
 all possible permutations and checkif they are palindromes/'Whilesuch a solution would work, it's entirely
@@ -196,7 +196,21 @@ Output:
 <b>Key takeaway:</b>
 <i>For optimal space, [reuse the matrix itself to track zero positions](https://takeuforward.org/data-structure/set-matrix-zero/). Just preserve the initial state of row 0 and col 0 with booleans, then modify in-place in a final sweep.</i>
 
+<hr>
 
+### Q1.9 String Rotation
+<p>
+String Rotation: Assume you have a method isSubst r ing which checks if one word is a substring
+of another. Given two strings, sland s 2, write code to check if s 2 is a rotation of si using only one
+call to isSubstring.
+</p>
+
+````
+Original str: erbottlewat
+Rotated: waterbottle
+````
+
+- [Option 1: Using String Concatenation -> Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_9_Str_Rotation/StringRotation.java)
 
 
 -----------
