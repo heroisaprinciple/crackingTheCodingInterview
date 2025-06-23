@@ -200,8 +200,8 @@ Output:
 
 ### Q1.9 String Rotation
 <p>
-String Rotation: Assume you have a method isSubst r ing which checks if one word is a substring
-of another. Given two strings, sland s 2, write code to check if s 2 is a rotation of si using only one
+String Rotation: Assume you have a method isSubstring which checks if one word is a substring
+of another. Given two strings, str1 and str2, write code to check if str2 is a rotation of str1 using only one
 call to isSubstring.
 </p>
 
