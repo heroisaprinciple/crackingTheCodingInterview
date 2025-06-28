@@ -1,6 +1,12 @@
-// Time complexity: O(n log n) because of the adanced sorting algorithm:
-// O(n) work per level * log n levels = O(n log n)
-// Space complexity: O(n) because of the recursive tree call stack
+/*
+Time complexity: O(n log n + m log m) because of the adanced sorting algorithm:
+O(n) work per level * log n levels = O(n log n)
+
+Space complexity: O(n + m) =>
+  O(n) for sorted char array of word1, O(m) for word2
+  Each sort uses O(log n) or O(log m) stack space, but that's negligible
+  So total is O(n + m)
+*/
 
 package Chapter1_ArraysAndStrings.Java.Q1_2_Check_Permutation;
 

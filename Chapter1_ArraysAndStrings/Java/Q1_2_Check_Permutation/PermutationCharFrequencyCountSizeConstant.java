@@ -1,4 +1,4 @@
-// Time complexity: O(n)
+// Time complexity: O(n + m)
 // Space complexity: O(1) because the array of 128 symbols will never grow
 // beyond 128 symbols
 
@@ -32,7 +32,7 @@ public class PermutationCharFrequencyCountSizeConstant {
   }
 
   private static boolean matchesFrequency(String word2, int[] freq) {
-    for (char c : word2.toCharArray()) { // O(n)
+    for (char c : word2.toCharArray()) { // O(m)
       if (freq[c] < 0) {
         return false;
       }

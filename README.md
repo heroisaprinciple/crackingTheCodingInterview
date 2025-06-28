@@ -18,10 +18,10 @@ cannot use additional data structures? </p>
 <p> Check Permutation: Given two strings, write a method to decide if one is a permutation of the
 other. </p>
 
-- [Option 1: Sort Strings -> Time: O(n log n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/PermutationSortStrings.java)
-- [Option 2: Count Char Frequency with 2 Hashmaps -> Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/PermutationCharFrequencyCount.java)
-- [Option 3: Count Charncy with 1 Hashmap -> Time: O(n); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/PermutationCharFrequencyCountOneHashmap.java)
-- [Option 4: Count Char Frequency with 1 Array -> Time: O(n); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/PermutationCharFrequencyCountSizeConstant.java)
+- [Option 1: Sort Strings -> Time: O(n log n + m log m); Space: O(n + m)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/PermutationSortStrings.java)
+- [Option 2: Count Char Frequency with 2 Hashmaps -> Time: O(n + m); Space: O(n + m)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/PermutationCharFrequencyCount.java)
+- [Option 3: Count Char Frequency with 1 Hashmap -> Time: O(n + m); Space: O(n)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/PermutationCharFrequencyCountOneHashmap.java)
+- [Option 4: Count Char Frequency with 1 Array -> Time: O(n + m); Space: O(1)](Chapter1_ArraysAndStrings/Java/Q1_2_Check_Permutation/PermutationCharFrequencyCountSizeConstant.java)
 
 
 <b>Key takeaway: <i>"In your interview, you should always check with your interviewer about the

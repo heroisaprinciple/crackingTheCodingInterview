@@ -1,5 +1,5 @@
 /*
-Time complexity: O(n)
+Time complexity: O(n + m)
 Space complexity: O(n)
 
 Space is O(n) because each HashMap can grow to store up to n unique characters,
@@ -36,13 +36,13 @@ public class PermutationCharFrequencyCountOneHashmap {
   }
 
   private static boolean matchesFrequency(HashMap<Character, Integer> freq, String word2) {
-    for (char c : word2.toCharArray()) { // O(n)
+    for (char c : word2.toCharArray()) { // O(m)
       if (!freq.containsKey(c))
         return false;
 
       int updated = freq.get(c) - 1;
       if (updated < 0) // test if we have multiple occurrences in the word:
-                       // apple -> p should be 0, not -1
+                       // appple -> p should be 0, not -1
         return false;
       freq.put(c, freq.get(c) - 1);
     }

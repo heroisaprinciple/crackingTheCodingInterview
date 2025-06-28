@@ -1,6 +1,6 @@
 /*
-Time complexity: O(n)
-Space complexity: O(n) -> O(n) + O(n)
+Time complexity: O(n + m)
+Space complexity: O(n + m)
 
 Space is O(n) because each HashMap can grow to store up to n unique characters,
 in the worst case where all characters are distinct.
